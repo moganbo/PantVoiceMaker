@@ -16,7 +16,7 @@ import io.github.moganbo.pantvoicemaker.R;
 @EActivity(R.layout.activity_start)
 public class StartActivity extends AppCompatActivity {
 
-    private static final long SPLASH_SHOW_TIME = 2000L;
+    private static final long SPLASH_SHOW_TIME = 1000L;
 
     private boolean isStartPause = false;
     private boolean isWaitTransition = false;
@@ -24,6 +24,8 @@ public class StartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        isStartPause = false;
+        isWaitTransition = false;
     }
 
     @Override

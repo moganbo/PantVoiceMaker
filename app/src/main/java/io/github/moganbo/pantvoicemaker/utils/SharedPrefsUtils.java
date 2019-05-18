@@ -14,6 +14,14 @@ public class SharedPrefsUtils {
         return AppController.getAppContext();
     }
 
+    public  static boolean contains(String key){
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
+        if(preferences != null){
+            return preferences.contains(key);
+        }
+        return false;
+    }
+
     /**
      * Helper method to retrieve a String value from {@link SharedPreferences}.
      *

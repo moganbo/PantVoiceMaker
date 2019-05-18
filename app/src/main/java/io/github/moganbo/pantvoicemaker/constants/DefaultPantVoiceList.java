@@ -30,7 +30,7 @@ public class DefaultPantVoiceList {
             "O_TEST_09",
             "O_TEST_10"
     ));
-    public static final List<String> EXTREAME = new ArrayList<>(Arrays.asList(
+    public static final List<String> EXTREME = new ArrayList<>(Arrays.asList(
             "E_TEST_01",
             "E_TEST_02",
             "E_TEST_03",
@@ -41,5 +41,25 @@ public class DefaultPantVoiceList {
             "E_TEST_08",
             "E_TEST_09",
             "E_TEST_10"
+    ));
+    public static final List<String> HEART = new ArrayList<>(Arrays.asList(
+            "っ♡",
+            "ぁ♡",
+            "ぁっ♡",
+            "あ♡",
+            "あっ♡",
+            "あぁっ♡",
+            "あっあっ♡ ",
+            "あんっ♡",
+            "はっ♡",
+            "はぁっ♡",
+            "はぁぁっ♡",
+            "ひゃ♡",
+            "ひゃぁ♡",
+            "ひん♡",
+            "ふっ♡",
+            "ふぅっ♡",
+            "♡",
+            "♡♡"
     ));
 }

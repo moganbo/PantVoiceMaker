@@ -1,47 +1,135 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_main_main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffb6c1"
-    tools:context="io.github.moganbo.pantvoicemaker.fragment.MainFragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".fragment.MainFragment">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/fragment_main_result_text_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
                 android:id="@+id/fragment_main_main_text_view"
                 android:layout_width="match_parent"
-                android:layout_height="240px"
-                android:layout_marginHorizontal="24px"
-                android:layout_marginTop="32px"
+                android:layout_height="100dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="16dp"
                 android:background="#f5deb3"
                 android:gravity="center"
-                android:text="Test\nTest\nTest"
                 android:textColor="#000000"
                 android:textSize="24sp" />
             <TextView
                 android:id="@+id/fragment_main_copy_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24px"
-                android:gravity="center"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:gravity="end"
                 android:text="※タップでコピーできます"
                 android:textColor="#708090"
                 android:textSize="12sp" />
         </LinearLayout>
-        <LinearLayout
-            android:id="@+id/fragment_main_config_layout"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"></LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="24dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="シチュエーション："
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <Button
+                        android:id="@+id/fragment_main_situation_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="選択してください"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="長さ："
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <Button
+                        android:id="@+id/fragment_main_word_count_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="選択してください"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/fragment_main_brackets_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="「」をつける"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/fragment_main_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_weight="1"
+                        android:text="名前："
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/fragment_main_name_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:layout_weight="2"
+                        android:inputType="text"
+                        android:text="テスト"
+                        android:textSize="18sp"
+                        android:background="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/fragment_main_result_button_layout"
@@ -56,7 +144,7 @@
             android:layout_marginHorizontal="24px"
             android:layout_marginVertical="24px"
             android:text="結果"
-            android:textSize="28sp"/>
+            android:textSize="28sp" />
     </LinearLayout>
 
 </LinearLayout>
