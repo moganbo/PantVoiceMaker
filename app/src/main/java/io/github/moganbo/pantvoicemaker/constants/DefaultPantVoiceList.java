@@ -19,28 +19,47 @@ public class DefaultPantVoiceList {
             "ふぁ…"
     ));
     public static final List<String> ORDINARY = new ArrayList<>(Arrays.asList(
-            "O_TEST_01",
-            "O_TEST_02",
-            "O_TEST_03",
-            "O_TEST_04",
-            "O_TEST_05",
-            "O_TEST_06",
-            "O_TEST_07",
-            "O_TEST_08",
-            "O_TEST_09",
-            "O_TEST_10"
+            "あ、",
+            "あっ、",
+            "あぁ、",
+            "やぁ…っ、",
+            "やだっ、",
+            "だめ、",
+            "だめぇ、",
+            "いっ、",
+            "イっ、",
+            "ちょ、",
+            "ふぁ、",
+            "らめ、",
+            "イッちゃ、",
+            "っふぁ…っ、",
+            "やぁ…っ、"
     ));
     public static final List<String> EXTREME = new ArrayList<>(Arrays.asList(
-            "E_TEST_01",
-            "E_TEST_02",
-            "E_TEST_03",
-            "E_TEST_04",
-            "E_TEST_05",
-            "E_TEST_06",
-            "E_TEST_07",
-            "E_TEST_08",
-            "E_TEST_09",
-            "E_TEST_10"
+            "っあ！",
+            "あっ!!",
+            "ああ\"っ！",
+            "ぁぁぅ…!",
+            "あぐっ！",
+            "ぁん！",
+            "ぃやっ…!",
+            "い\"っ？！",
+            "うっ！",
+            "ぅぅあっ!",
+            "うひゃぁっ！",
+            "ぃやっ…!",
+            "しっぬ…っ！",
+            "はあっ…！",
+            "はひっ！",
+            "ひぃ！",
+            "ひっ！",
+            "も…ぅぅあっ!",
+            "もうダメっ…",
+            "やっらっ!",
+            "んんっ！",
+            "んぁっう！",
+            "あぐっ！",
+            "やっ、だ…！"
     ));
     public static final List<String> HEART = new ArrayList<>(Arrays.asList(
             "っ♡",
@@ -61,5 +80,23 @@ public class DefaultPantVoiceList {
             "ふぅっ♡",
             "♡",
             "♡♡"
+    ));
+    public static final List<String> LIP = new ArrayList<>(Arrays.asList(
+            "っん…",
+            "っぢゅ…",
+            "じゅる、",
+            "ちゅっ、",
+            "ぢゅるる…",
+            "ちゅむ…",
+            "ちゅる、",
+            "ぢゅ、",
+            "は、",
+            "はむ、",
+            "ぷぁ…",
+            "ふっ、",
+            "ん、",
+            "んぐ…",
+            "んふ…",
+            "ふっ、"
     ));
 }

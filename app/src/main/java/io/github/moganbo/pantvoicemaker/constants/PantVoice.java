@@ -1,13 +1,7 @@
 package io.github.moganbo.pantvoicemaker.constants;
 
-import com.annimon.stream.Stream;
-import com.annimon.stream.function.Function;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public enum PantVoice {
     UNDEFINED,
@@ -15,6 +9,7 @@ public enum PantVoice {
     ORDINARY(1, "普通", DefaultPantVoiceList.ORDINARY),
     EXTREME(2, "激しめ", DefaultPantVoiceList.EXTREME),
     HEART(3, "♡", DefaultPantVoiceList.HEART),
+    LIP(4, "リップ音", DefaultPantVoiceList.LIP),
     ;
 
     private int index;
@@ -33,7 +28,7 @@ public enum PantVoice {
         this.list = list;
     }
 
-    public int getIndex(){
+    public int getIndex() {
         return this.index;
     }
 
